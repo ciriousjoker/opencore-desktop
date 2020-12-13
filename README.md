@@ -1,6 +1,6 @@
 # opencore-desktop
 
-This is my OpenCore setup for Ryzen 5 2600, ASRock B450 Pro4 with onboard LAN & audio. It runs Mac OS 11.0 Big Sur Beta 4 at the time of writing this and is based on OpenCore 0.6.0.
+This is my OpenCore setup for Ryzen 5 2600, ASRock B450 Pro4 with onboard LAN & audio. It runs Mac OS 11.1 Big Sur and is based on OpenCore 0.6.4.
 
 # !! REPLACE YOUR PLATFORMINFO BEFORE YOU USE THIS. REPLACE \_\_PLACEHOLDER\_\_!!
 
@@ -41,6 +41,11 @@ This is my OpenCore setup for Ryzen 5 2600, ASRock B450 Pro4 with onboard LAN & 
   - I disabled a few debugging flags to speedup boot
 
 ## Troubleshooting
+
+- This is a release build with debugging disabled. As a first step, replace `config.plist` with `config_debug.plist` to see log output
+- If that doesn't spit out useful info, switch to the debug branch to get the debug binaries as well
+
+---
 
 - I used OpenCore release to speed up booting (kexts are still debug), so if you run into issues, switch to OpenCore debug first
 - System hangs at [BSSTART] (or smth like that): Properly generated EC.aml was missing
