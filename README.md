@@ -1,8 +1,6 @@
-# opencore-desktop (debug)
+# opencore-desktop
 
 This is my OpenCore setup for Ryzen 5 2600, ASRock B450 Pro4 with onboard LAN & audio. It runs Mac OS 11.1 Big Sur and is based on OpenCore 0.6.4.
-
-Replace `config.plist` with `config_release.plist` if you want to hide debugging info.
 
 # !! REPLACE YOUR PLATFORMINFO BEFORE YOU USE THIS. REPLACE \_\_PLACEHOLDER\_\_!!
 
@@ -44,7 +42,7 @@ Replace `config.plist` with `config_release.plist` if you want to hide debugging
 
 ## Troubleshooting
 
-- This is the debug branch with debugging enabled by default, using debug versions of OpenCore as well as all the kexts
+- This is a release build with debugging disabled. As a first step, replace `config.plist` with `config_debug.plist` to see log output
 - If that doesn't spit out useful info, switch to the debug branch to get the debug binaries as well
 
 ---
